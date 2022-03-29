@@ -61,5 +61,4 @@ with open("output.txt", "w") as txt_file:
             txt_file.write(f'{result_string}\n')
 
         except:
-            if debug:                
-                txt_file.write(f'{item}\t-1\t-1\n')
+            txt_file.write(f'{item}\t-1\t-1\n' if debug else f'{item}\t-1\t')      
